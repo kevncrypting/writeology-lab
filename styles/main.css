@@ -1,0 +1,21 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px gray solid;
+    height: 100px;
+}
+
+.header-nav {
+    display:flex;
+    justify-content: space-between;
+}
+
+.featured-post {
+
+}
+
+.img {
+    border-radius: 30px;
+    background-color: black;
+}
