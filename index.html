@@ -4,41 +4,146 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Writeology X</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div>
-            Writeology
-            <img src="" alt="Writeology Logo"><h1>Writeology X</h1>
+            <img src="assets/writeology-logo.svg" alt="Writeology Logo">
         </div>
         <div class="header-nav">
             <div>Cart (0)</div>
-            <div>account-logo</div>
-            <div>hamburger-menu-placeholder</div>
+            <div>acct-logo</div>
+            <div>ham-menu</div>
         </div>
     </header>
     <hr>
-<!-- make background dark gray -->
     <main> 
-        <!-- make background black -->
-        <section class="featured-post img">
-            btn with category/tag? title below it, followed by circle picture, author name, clock img, date
+        <section class="featured-post">
+            <h5>TIPS</h5>
+            <h4>5 ways to improve your digital project management</h4>
+            <section class="post-info"><img src="assets/author.png" alt="Author"> <span>John Carter</span><img src="assets/clock.png" alt="Clock"><span>June 16, 2022</span></section>
         </section>
-        <section class="">
-            three tips with category and headline, gray divider
+        <section class="pinned-posts">
+            <h5>TIPS</h5>
+            <h4>How to choose the best management software</h4>
+            <hr>
+            <h5>TIPS</h5>
+            <h4>3 tips to avoid Internet distractions at work</h4>
+            <hr>
+            <h5>RESOURCES</h5>
+            <h4>7 great productivity apps for your new iPad</h4>
         </section>
-        <section>
+        <section class ="latest-articles">
+            <h3>Latest Articles</h3>
+            <article class="post">
+                <img src="assets/management-software.jpg" alt="Management Software">
+                <h5>TIPS</h5>
+                <h4>How to choose the best management software</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, nostrum dicta, qui inventore consequatur natus et a quos accusamus, cupiditate non cum quis odio! Ipsum totam distinctio debitis rerum cumque?
+                </p>
+                <img src="assets/author.jpg" alt="Author's Picture" class="profile-picture"><span>John Carter</span><img src="assets/clock.jpg" alt="Clock"><span>June 18, 2022</span>
+            </article>
+            <article class="post">
+                <img src="assets/productivity-tools.jpg" alt="Productivity Tools">
+                <h5>RESOURCES</h5>
+                <h4>10 productivity tools that are worth checking out</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, nostrum dicta, qui inventore consequatur natus et a quos accusamus, cupiditate non cum quis odio! Ipsum totam distinctio debitis rerum cumque?
+                </p>
+                <img src="assets/author.jpg" alt="Author's Picture" class="profile-picture"><span>John Carter</span><img src="assets/clock.jpg" alt="Clock"><span>June 18, 2022</span>
+            </article>
+            <article class="post">
+                <img src="assets/avoid-distractions.jpg" alt="Avoid Distractions">
+                <h5>TIPS</h5>
+                <h4>3 tips to avoid Internet distractions at work</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, nostrum dicta, qui inventore consequatur natus et a quos accusamus, cupiditate non cum quis odio! Ipsum totam distinctio debitis rerum cumque?
+                </p>
+                <img src="assets/author.jpg" alt="Author's Picture" class="profile-picture"><span>John Carter</span><img src="assets/clock.jpg" alt="Clock"><span>June 18, 2022</span>
+            </article>
+            <article class="post">
+                <img src="assets/productivity-ipad.jpg" alt="Productivity iPad">
+                <h4>RESOURCES</h4>
+                <h3>7 great productivity apps for your new iPad</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, nostrum dicta, qui inventore consequatur natus et a quos accusamus, cupiditate non cum quis odio! Ipsum totam distinctio debitis rerum cumque?
+                </p>
+                <img src="assets/author.jpg" alt="Author's Picture" class="profile-picture"><span>Sophie Moore</span><img src="assets/clock.jpg" alt="Clock"><span>June 18, 2022</span>
+            </article>
+            <article class="post">
+                <img src="assets/organized-productivity.jpg" alt="Organized Productivity">
+                <h5>GUIDES</h5>
+                <h4>How to create an organized productivity plan for the year</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, nostrum dicta, qui inventore consequatur natus et a quos accusamus, cupiditate non cum quis odio! Ipsum totam distinctio debitis rerum cumque?
+                </p>
+                <img src="assets/author.jpg" alt="Author's Picture" class="profile-picture"><span>John Carter</span><img src="assets/clock.jpg" alt="Clock"><span>June 16, 2022</span>
+            </article>
+        </section>
+        <hr>
+        <section class="search">
+            <img src="assets/writeology-logo.svg" alt="Writeology Logo">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae culpa iusto earum, fuga labore ut laborum beatae eaque, quo magni veritatis voluptates dolore tempore sint expedita repellendus dolores, quae non?
+            </p>
+            <!-- this should be a search bar, gray text inside, magnifying glass at end -->
+        </section>
+        <hr>
+        <section class="toggle-category-tags">
+            <!-- this should have all article tags, behavior toggleable?? -->
+        </section>
+        <section class="popular-articles">
+            <article class="post" id="simple">
+                <!-- this should have just the tag and the headline -->
+            </article>
+            <h3>Popular articles</h3>
+            <hr>
+                <article class="horizontal-post">
+                    <img src="assets/collaboration-software.jpg" alt="Collaboration Software"><h3>10 best collaboration software for your team</h3>
+                </article>
+            <hr>
+                <article class="horizontal-post">
+                    <img src="assets/complete-guide.jpg" alt="Complete Guide"><h3>A complete guide to learn project management</h3>
+                </article>
+            <hr>
+                <article class="horizontal-post">
+                    <img src="assets/time-tracking.jpg" alt="Time Tracking"><h3>How time tracking can improve team management</h3>
+                </article>
+        </section>
+        <section class="subscription-zone">
+            <h3>Subscribe to unlock premium content</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolores accusantium doloremque soluta tempore nisi quos laudantium. Repellendus nam eum hic non sint nesciunt, voluptas, expedita quia minus dolores animi?
+            </p>
+            <div class="unlock-black-box">
 
+            </div>
         </section>
     </main>
     <footer>
-        <!-- Subscribe to our newsletter
-        text header
-        input box | subscribe btn
-        social media icons: fb, twitter, ig?, linkedin?, yt
-        divider
-        Copyright :copy; Writeology X | Designed by <a href="">X Templates</a> symbol for dot Powered by <a href=""></a> -->
+        <h3>
+            Subscribe to our newsletter
+        </h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quas eligendi quidem, excepturi hic quae, eveniet praesentium, dicta rerum harum inventore velit. Praesentium voluptates cum excepturi fugit, quibusdam saepe iusto?
+        </p>
+        <p>
+            input box
+            <br>
+            subscribe btn
+            <br>
+            social media icons: fb, twitter, ig, linkedin, yt
+        </p>
+        <hr>
+        <p>
+            Copyright &copy; Writeology X | Designed by <a href="">X Templates</a> - Powered by <a href=""></a>
+        </p>
+        
     </footer>
 </body>
 </html>
