@@ -134,10 +134,12 @@ p {
     padding-bottom: 10px;
 }
 
-.post-info img {
+.post-info {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+}
+
+.post-info img {
     border-radius: 50%;
     height: 30px;
     width: 30px;
@@ -177,6 +179,10 @@ img {
 .unlock-black-box {
     background-color: black;
     height: 300px;
+}
+
+.social-icon {
+    height: 1em;
 }
 
 footer {
