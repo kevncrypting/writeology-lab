@@ -20,7 +20,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 /* CHANGED CSS RESET BASELINE: deleted font: inherit and added family/weight properties to ruleset */
-	font-size: 16px;
+	font-size: 100%;
     font-family: 'Manrope', sans-serif;
     font-weight: 300;
 	vertical-align: baseline;
@@ -52,6 +52,39 @@ table {
 
 /* This is the beginning of my CSS */
 
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 5%;
+    height: auto;
+}
+
+.column {
+    width: 100%;
+    
+}
+
+.container .column:first-child{
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width:767px){
+    .container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .column {
+        width: 48%;
+    }
+
+    .container .column:first-child{
+        margin-right: 4%;
+    }
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -66,6 +99,7 @@ header {
 .header-nav {
     display: flex;
     justify-content: center;
+    gap: 10px;
 }
 
 h2, h3, h4, h5, span {
@@ -113,14 +147,6 @@ footer p {
 
 a {
     color: black;
-}
-
-div.zone-upper {
-    margin: 5%;
-}
-
-div.zone-lower {
-    margin: 5%;
 }
 
 .post {
