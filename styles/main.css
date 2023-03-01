@@ -19,8 +19,8 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
+/* CHANGED CSS RESET BASELINE: deleted font: inherit and added family/weight properties to ruleset */
 	font-size: 16px;
-/* CHANGED CSS RESET BASELINE: modified from font: inherit and added family/weight properties to ruleset*/
     font-family: 'Manrope', sans-serif;
     font-weight: 300;
 	vertical-align: baseline;
@@ -59,9 +59,13 @@ header {
     min-height: 15%;
     min-width: 320px;
     width: 100%;
-    margin: 5%;
-    padding: 5% 0;
+    padding: 10% 5%;
     border-bottom: solid 1px rgb(237, 237, 237);
+}
+
+.header-nav {
+    display: flex;
+    justify-content: center;
 }
 
 h2, h3, h4, h5, span {
@@ -80,7 +84,7 @@ h5 {
 
 p {
     color: rgb(110, 110, 110);
-    font-size: 1.3em;
+    font-size: 1em;
     margin-top: 5%;
     margin-bottom: 5%;
 }
@@ -92,58 +96,63 @@ hr {
 }
 
 img {
-    border-radius: 10px;
+    border-radius: 5%;
     width: 100%;
     max-width: 480px;
-}
-
-.search img {
-    width: 50%
 }
 
 footer {
     text-align: center;
+    padding-top: 10%;
 }
 
-.header-nav {
-    display: flex;
-    justify-content: center;
+footer p {
+    font-size: 1em;
+    padding: 0 5%;
 }
 
-div.top-half {
+a {
+    color: black;
+}
+
+div.zone-upper {
     margin: 5%;
-    max-width: 992px;
 }
 
-div.bottom-half {
+div.zone-lower {
     margin: 5%;
-    padding: 
-    max-width: 992px;
 }
 
-.post-default-box {
+.post {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     min-height: 320px;
     min-width: 320px;
     width: 100%;
     max-width: 480px;
-    border-radius: 10px;
-    background-color: black;
-    color: white;
-    padding: 5%;
+    border-radius: 5%;
     margin: 10% 0;
     box-sizing: border-box;
 }
 
-.rounded-box-background {
-    color:black;
-    background-color: white;
-    border-radius: 10px;
-    width: 2.5em;
-    padding: 2.5%;
-    font-size: 1.1em;
+.post-box {
+    padding: 10% 5%;
+    background-color: black;
+    justify-content: flex-end;
+    color: white;
+}
+
+.post-author-date {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.post-author-date img {
+    border-radius: 50%;
+    height: 2em;
+    width: 2em;
 }
 
 .post-featured h4 {
@@ -153,55 +162,71 @@ div.bottom-half {
 }
 
 .post-popular h5 {
-    color:white;
-    /* padding: 2.5%; */
     font-size: 1.1em;
+}
+
+.post-popular img {
+    width: 35%;
 }
 
 .post-horizontal {
     display: flex;
-}
-
-.post-info {
-    display: flex;
     gap: 10px;
     align-items: center;
-    margin-bottom: 5%;
 }
 
-.post-info img {
-    border-radius: 50%;
-    height: 2em;
-    width: 2em;
+.post-horizontal h3 {
+    font-size: 1em;
 }
 
-.popular-articles img {
-    width: 25%;
+.tag-box {
+    color:black;
+    background-color: rgb(237, 237, 237);
+    border-radius: 10%;
+    width: fit-content;
+    padding: 2.5%;
+    font-size: 1.1em;
 }
 
-.subscription-zone {
-    background-color: rgb(43, 43, 43);
+#tag-featured {
+    background-color: white;
+    border-radius: 10%;
+    color: black;
+}
+
+#tag-popular {
     color:white;
-    padding: 30px;
+}
+
+.search {
+    padding: 10% 0;
+}
+
+.search img {
+    width: 50%
+}
+
+.zone-premium {
+    background-color: rgb(26, 26, 26);
+    color:white;
+    padding: 20% 5%;
     text-align: center;
 }
 
-.unlock-black-box {
+.zone-premium p {
+    color: white;
+}
+
+.unlock-box {
     background-color: black;
     height: 300px;
 }
 
-.social-icon {
+.social {
     display: flex;
     justify-content: center;
 }
 
-.social-icon img {
+.social img {
     height: 2.5em;
-}
-
-#featured-tag {
-    background-color: white;
-    border-radius: 5px;
-    color: black;
 }
