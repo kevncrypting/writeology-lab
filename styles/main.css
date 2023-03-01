@@ -19,8 +19,10 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
+	font-size: 16px;
+/* CHANGED CSS RESET BASELINE: modified from font: inherit and added family/weight properties to ruleset*/
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -28,8 +30,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+/* CHANGED CSS RESET BASELINE: modified from size 1 */
 body {
-	line-height: 1;
+	line-height: 1.5; 
 }
 ol, ul {
 	list-style: none;
@@ -47,126 +50,133 @@ table {
 	border-spacing: 0;
 }
 
-/* this is the start of my CSS! */
-
-* {
-    font-family: 'Manrope', sans-serif;
-    font-weight: 300;
-}
+/* This is the beginning of my CSS */
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 90px;
-    padding: 10px;
-}
-
-.header-nav {
-    display:flex;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-hr {
-    height: 1px;
-    background-color: rgb(237, 237, 237);
-    margin: 15px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-section {
-    margin: 15px;
+    min-height: 15%;
+    min-width: 320px;
+    width: 100%;
+    margin: 5%;
+    padding: 5% 0;
+    border-bottom: solid 1px rgb(237, 237, 237);
 }
 
 h2, h3, h4, h5, span {
     font-weight: 700;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-h3 {
-    margin-top: 80px;
 }
 
 h2, h3, h4, h5 {
-    font-size: 1.7em;
+    font-size: 1.3em;
+    width: 100%;
 }
 
 h5 {
     color: rgb(137, 137, 137);
+    margin: 3% 0;
 }
 
 p {
     color: rgb(110, 110, 110);
     font-size: 1.3em;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
-.featured-post {
+hr {
+    height: 1px;
+    background-color: rgba(232, 232, 232, 0.95);
+    margin: 5%;
+}
+
+img {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 480px;
+}
+
+.search img {
+    width: 50%
+}
+
+footer {
+    text-align: center;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+}
+
+div.top-half {
+    margin: 5%;
+    max-width: 992px;
+}
+
+div.bottom-half {
+    margin: 5%;
+    padding: 
+    max-width: 992px;
+}
+
+.post-default-box {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    min-height: 400px;
-    max-width: 400px;
-    border-radius: 20px;
+    min-height: 320px;
+    min-width: 320px;
+    width: 100%;
+    max-width: 480px;
+    border-radius: 10px;
     background-color: black;
     color: white;
-    padding: 30px;
-    margin: 25px;
-    margin-bottom: 60px;
+    padding: 5%;
+    margin: 10% 0;
+    box-sizing: border-box;
 }
 
-.featured-post h5 {
+.rounded-box-background {
     color:black;
     background-color: white;
     border-radius: 10px;
-    width: 45px;
-    padding: 15px;
-    font-size: 1.3em;
+    width: 2.5em;
+    padding: 2.5%;
+    font-size: 1.1em;
 }
 
-.featured-post h4 {
+.post-featured h4 {
     color:white;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
+.post-popular h5 {
+    color:white;
+    /* padding: 2.5%; */
+    font-size: 1.1em;
+}
+
+.post-horizontal {
+    display: flex;
+}
+
 .post-info {
     display: flex;
-    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 5%;
 }
 
 .post-info img {
     border-radius: 50%;
-    height: 30px;
-    width: 30px;
-}
-
-#featuredtag {
-    background-color: white;
-    border-radius: 3px;
-    color: black;
+    height: 2em;
+    width: 2em;
 }
 
 .popular-articles img {
     width: 25%;
-}
-
-.horizontal-post {
-    display: flex;
-}
-
-img {
-    border-radius: 30px;
-    width: 100%;
-}
-
-.profile-picture {
-    border-radius: 50%;
-    background-color: blue;
 }
 
 .subscription-zone {
@@ -182,9 +192,16 @@ img {
 }
 
 .social-icon {
-    height: 1em;
+    display: flex;
+    justify-content: center;
 }
 
-footer {
-    text-align: center;
+.social-icon img {
+    height: 2.5em;
+}
+
+#featured-tag {
+    background-color: white;
+    border-radius: 5px;
+    color: black;
 }
