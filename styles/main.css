@@ -68,11 +68,11 @@ header {
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    /* width: auto; */
     padding: 40px 5%;
     border-bottom: solid 1px rgb(237, 237, 237);
 }
 
+/* This is a hidden social media section in the left portion of the header, will change display property with media query to show in tablet/desktop view */
 #social {
     display:none;
 }
@@ -137,19 +137,9 @@ a {
     color: black;
 }
 
-/* .post {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    min-height: 320px;
-    min-width: 320px;
-    width: 100%;
-    max-width: 480px;
-    margin: 10% 0;
-    box-sizing: border-box; 
+.column {
+    box-sizing: border-box;
 }
-*/
-
 
 .post-box {
     display: flex;
@@ -164,9 +154,9 @@ a {
 
 .post-author-date {
     display: flex;
+    justify-content: flex-start;
     gap: 10px;
     align-items: center;
-    margin-bottom: 5%;
 }
 
 .post-author-date img {
@@ -179,6 +169,13 @@ a {
     color:white;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.post-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .post-popular h5 {
@@ -255,11 +252,11 @@ a {
     width: 2.5em;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:768px) and (max-width:1200px) {
 /* Converts single-column layout to two-column layout */
     .responsive-two-column-grid {
         display:grid;
-        grid-template-columns: 1fr 3fr 2fr 1fr;
+        grid-template-columns: 0fr 6fr 4fr 0fr;
     }
     
     .responsive-two-column-grid section {
@@ -278,4 +275,59 @@ a {
         display: flex;
         justify-content: flex-start;
     }
+
+    .post {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    
+    article.post img {
+        max-height: 160px;
+    }
+
+    h2, h3, h4, h5 {
+        font-size: 1em;
+        width: 100%;
+    }   
+}
+
+@media screen and (min-width:1201px) {
+/* Adds margin on desktop view */
+    .responsive-two-column-grid {
+        display:grid;
+        grid-template-columns: 1fr 6fr 4fr 1fr;
+    }
+
+    .responsive-two-column-grid section {
+        grid-column-start: 2;
+        grid-row-start: 1;
+        margin: 40px 20px;
+    }
+
+    .responsive-two-column-grid section + section {
+        grid-column-start: 3;
+        grid-row-start: 1;
+    }
+
+    /* Shows the social media section in header  */
+    #social {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .post {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    article.post img {
+        max-height: 240px;
+    }
+
+    h2, h3, h4, h5 {
+        font-size: 1em;
+        width: 100%;
+    }   
 }
