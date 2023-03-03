@@ -255,7 +255,7 @@ a {
     width: 2.5em;
 }
 
-@media screen and (min-width:768px) and (max-width:1200px) {
+@media screen and (min-width:768px) {
 /* Converts single-column layout to two-column layout */
     .responsive-two-column-grid {
         display:grid;
@@ -273,24 +273,6 @@ a {
         grid-row-start: 1;
     }
     
-/* Shows the social media section in header  */
-    #social {
-        display: flex;
-        justify-content: flex-start;
-    }
-}
-
-@media screen and (min-width:1201px) {
-/* Converts single-column layout to two-column layout */
-    .responsive-two-column-grid section {
-        margin: 40px 20px;
-    }
-        
-    .responsive-two-column-grid section + section {
-        grid-column-start: 3;
-        grid-row-start: 1;
-    }
-        
 /* Shows the social media section in header  */
     #social {
         display: flex;
